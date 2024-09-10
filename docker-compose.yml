@@ -1,7 +1,6 @@
-version: "3"
 services:
   dind-daemon:
-    image: "docker:dind"
+    image: "docker:dind-rootless"
     environment:
       DOCKER_TLS_CERTDIR: ""
     networks:
